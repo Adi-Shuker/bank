@@ -22,7 +22,6 @@ function App() {
 
     useEffect(() => {
         bankApi.getUser(userId).then((res) => {
-            console.log(res);
             setUserDetails(res);
         });
         bankApi
